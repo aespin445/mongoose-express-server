@@ -1,15 +1,8 @@
 const mongoose = require('mongoose');
 
 const grocerySchema = new mongoose.Schema({
-    item: {
-        type: String,
-        required: [true, 'Item name is required'],
-        trim: true
-    },
-    food_group: {
-        type: String,
-        required: [true, 'Food group is required']
-    }
+    item: { type: String },
+    food_group: { type: String }
 });
 
 module.exports = mongoose.model('GroceryItem', grocerySchema);

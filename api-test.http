@@ -4,7 +4,7 @@
 @port = 3000
 
 ###
-GET {{domain}}:{{port}}/find/{{database}}/:{{collection}}
+GET {{domain}}:{{port}}/find/{{database}}/{{collection}}
 Content-Type: application/json
 
 ###
@@ -14,3 +14,9 @@ Content-Type: application/json
 ###
 POST {{domain}}:{{port}}/insert/{{domain}}/{{collection}}
 Content-Type: application/json
+
+{
+    "item": "steak",
+    "food_group": "proteins",
+    "price-in-usd": 12
+}
